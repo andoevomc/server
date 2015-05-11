@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow>
+    <appname>gameserver</appname>
+    <business>
+        <properties>
+            <factory>dreamgame.business.SimpleBusinessPropertiesFactory</factory>
+        </properties>
+    </business>
+    <db>
+        <enable>false</enable>
+        <modelname>bacay-online</modelname>
+        <factory-name>dreamgame.gameserver.framework.db.primrose.PrimroseConnectionManagerFactory</factory-name>
+        <account>root</account>
+        <pass></pass>
+        <url>jdbc:mysql://127.0.0.1/gameonline</url>
+    </db>
+    <server>
+        <name>dreamgame.gameserver.framework.servers.nettysocket.NettySocketServer</name>
+        <use_charge_register>yes</use_charge_register>
+        <port>2147</port>
+        <connecttimeout>60000</connecttimeout><!--1Min -->
+        <sessiontimeout>14400000</sessiontimeout><!--240Min -->
+        <receivebuffersize>1048576</receivebuffersize><!--1MB -->
+        <reuseaddress>true</reuseaddress>
+        <tcpnodelay>true</tcpnodelay>
+    </server>
+    <scheduler>
+        <enable>false</enable>
+    </scheduler>
+</workflow>

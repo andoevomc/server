@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factory>
+    <usedformats>
+        <format name="json"/>
+    </usedformats>
+    <package package="dreamgame.gameserver.framework" name="PackageProtocol" module="" msgpkg="dreamgame" description="All-In-One messages">
+        <message mid="1000" name="Login" needloggedin="false"/>
+        <message mid="1100" name="New" dbflag="2"/>
+        <message mid="1101" name="Invite" dbflag="2"/>
+        <message mid="1102" name="Reply" dbflag="2"/>
+        <message mid="1103" name="Cancel" dbflag="2"/>
+        <message mid="1104" name="Turn" dbflag="2"/>
+        <message mid="1105" name="Join" dbflag="2"/>
+        <message mid="1106" name="Joined" msgtype="2"/>
+        <message mid="1107" name="EnterZone" dbflag="2"/>
+        <message mid="1108" name="Start" dbflag="2"/>
+        <message mid="1109" name="Started" msgtype="2"/>
+        <message mid="1110" name="Ready" dbflag="2"/>
+        <message mid="1111" name="AllReady" msgtype="2"/>
+        <message mid="1112" name="GetPoker" msgtype="2"/>
+        <message mid="1113" name="Restart" dbflag="2"/>
+        <message mid="1114" name="EndMatch" msgtype="2"/>
+        <message mid="1115" name="Register" needloggedin="false"/>
+        <message mid="1116" name="Out" msgtype="2"/>
+        <message mid="1117" name="KickOut" dbflag="2"/>
+        <message mid="1118" name="WaitingAccept" msgtype="2"/>
+        <message mid="1119" name="AcceptJoin" dbflag="2"/>
+        <message mid="1120" name="KeepConnection" dbflag="2"/>
+        <message mid="1121" name="FindRoomByOwner"  dbflag="2"/>
+        <message mid="1122" name="AddFriendByName" dbflag="2" />
+        <message mid="1123" name="UpdateUserInfo" dbflag="2" />
+        <message mid="1124" name="Suggest" dbflag="2" />
+        <message mid="1124" name="Suggest" dbflag="2" />
+        <message mid="1125" name="BocPhom" dbflag="2" />
+        <message mid="1126" name="AnPhom" dbflag="2" />
+        <message mid="1127" name="HaPhom" dbflag="2" />
+        <message mid="1128" name="GuiPhom" dbflag="2" />
+        <message mid="1129" name="TimeOut" dbflag="2" />
+        <message mid="1130" name="SetMinBet" dbflag="2" />
+        <message mid="1200" name="GetPlayingList" dbflag="1"/>
+        <message mid="1201" name="GetWaitingList" dbflag="1"/>
+        <message mid="1202" name="GetAvatarList" dbflag="1"/>
+        <message mid="1203" name="GetFrientList" dbflag="2"/>
+        <message mid="1204" name="AddFriend" dbflag="1"/>
+        <message mid="1205" name="RemoveFriend" dbflag="1"/>
+        <message mid="1206" name="TransferCash" dbflag="1"/>
+        <message mid="1207" name="GetRichests"  dbflag="1"/>
+        <message mid="1208" name="GetBestPlayer" dbflag="1"/>
+        <message mid="1209" name="GetMostPlaying"  dbflag="1"/>
+        <message mid="1210" name="GetUserInfo" dbflag="1"/>
+        <message mid="1211" name="GetRoomMoney" dbflag="1" />
+        <message mid="1212" name="GetFreeFriendList"  dbflag="1"/>
+        <message mid="1213" name="JoinPlayer"  />
+        <message mid="1214" name="AcceptJoinPlayer" />
+        <message mid="1215" name="Peace"  />
+        <message mid="1216" name="PeaceAccept" />
+        <message mid="1217" name="Lost" />
+        <message mid="1300" name="Chat" dbflag="1"/>
+        <message mid="1301" name="PrivateChat" dbflag="1"/>
+		
+        <message mid="1400" name="BuyAvatar" needloggedin="false"/>
+        <message mid="1401" name="BuyLevel" needloggedin="false"/>
+        <message mid="1500" name="GetPostList" needloggedin="false"/>
+        <message mid="1501" name="PostDetail" needloggedin="false"/>
+        <message mid="1502" name="PostNew" needloggedin="false"/>
+        <message mid="1503" name="PostComment" needloggedin="false"/>
+        <message mid="1504" name="OfflineMessage" needloggedin="true"/>
+        <message mid="1505" name="Logout" needloggedin="true"/>
+		
+        <message mid="1601" name="GetUserData" needloggedin="true" dbflag="2" />
+	<message mid="1701" name="VerifyReceiptIphone" needloggedin="true" dbflag="2" />
+	
+    </package>
+    <package package="dreamgame.gameserver.framework" name="PackageProtocol" module="" msgpkg="dreamgame.gameserver.framework" description="Framework messages">
+        <message mid="9999" name="ExpiredSession" msgtype="2"/>
+    </package>
+</factory>
+<!--
+- needloggedin:
+	+ false: no need logged in
+	+ true or missed attribute: need logged in
+- msgtype:
+	+ 1: only require message request
+	+ 2: only require message response
+	+ other or missed attribute: require all
+- dbflag (only be used in msgtype!=2):
+	+ 1: unuse
+	+ 2: non-transaction
+	+ default and other: transaction
+-->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zones>
+	<zone id="1" name="Bacay" capacity="12" players="12">
+	</zone>
+	<zone id="2" name="Tien len mien nam" capacity="12" players="12">
+	</zone>
+<zone id="3" name="BCTC" capacity="12" players="12">
+	</zone>
+<zone id="4" name="Caro" capacity="12" players="12">
+	</zone>
+<zone id="5" name="Phom" capacity="12" players="12">
+	</zone>
+<zone id="6" name="CoTuong" capacity="12" players="2">
+	</zone>
+<zone id="7" name="TLDL" capacity="12" players="4">
+	</zone>
+
+<zone id="8" name="TLMB" capacity="12" players="4">
+	</zone>
+<zone id="9" name="abc" capacity="12" players="4">
+	</zone>
+<zone id="10" name="Poker" capacity="12" players="4">
+	</zone>
+<zone id="11" name="XiTO" capacity="12" players="4">
+	</zone>
+<zone id="12" name="XiTO2" capacity="12" players="4">
+	</zone>
+	<zone id="13" name="MauBinh" capacity="12" players="4">
+	</zone>
+</zones>

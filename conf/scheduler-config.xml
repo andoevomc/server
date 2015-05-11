@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheduler package="com.punch.heist">
+    <job name="" module="" enable="true" jobname="" interval="" delay=""/>
+</scheduler>
+<!--
+    + module and delay attributes are optional.
+    + delay's in milliseconds and default is 0.
+    + jobname is unique
+	+ interval in seconds
+-->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<FakeRoomConfig>	
+		<config zone_id="1" zone_name="Bacay" min_no="3" max_no="5" />
+		<config zone_id="5" zone_name="Tien len mien nam" min_no="8" max_no="12" />
+		<config zone_id="8" zone_name="TLMB" min_no="3" max_no="5" />
+		<config zone_id="3" zone_name="BCTC" min_no="3" max_no="5" />
+		<config zone_id="4" zone_name="Phom" min_no="8" max_no="13" />
+		<config zone_id="6" zone_name="CoTuong" min_no="1" max_no="3" />
+		
+		<config zone_id="10" zone_name="Poker" min_no="3" max_no="5" />
+		<config zone_id="11" zone_name="XiTO" min_no="5" max_no="7" />
+	</FakeRoomConfig>
+</Configs>
